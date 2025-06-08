@@ -1,0 +1,112 @@
+.Container {
+    background-color: var(--white_color);
+    color: var(--black_shade_one);
+    width: fit-content;
+    box-sizing: content-box;
+    border-radius: 80px;
+    width: 130px;
+    height: 50px;
+    font-family: "Nunito";
+    font-size: 17.92px;
+    font-weight: 500;
+    line-height: 25.088px;
+    color: var(--black_shade_one);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.HomomophismContainer {
+    font-family: "Nunito";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottomNavs {
+    width: 100%;
+    display: flex;
+    font-weight: bold;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Icongrid {
+    background-color: var(--white_color);
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-sizing: content-box;
+    width: 80px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 50px;
+    cursor: pointer;
+    color: var(--grey_button);
+}
+
+.Icongrid>:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white_color);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.Icongrid>:nth-child(2) {
+    margin-right: 10px;
+}
+
+.NavigationCenter {
+    cursor: pointer;
+    background-color: var(--white_color);
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-sizing: content-box;
+    width: 80px;
+    padding: 5px;
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 50px;
+    color: var(--black_shade_one);
+}
+
+.selected {
+    background-color: var(--white_color);
+    width: 65px;
+    padding: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+
+}
+
+.nonSeleceted {
+    margin-right: 10px;
+}
+
+.FilterCenter {
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    display: flex;
+    padding: 10px;
+    width: 50px;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
