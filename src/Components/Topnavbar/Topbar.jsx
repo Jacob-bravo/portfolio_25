@@ -4,7 +4,7 @@ import Roundedbtn from '../RoundedButton/Roundedbtn';
 import NightTime from "../../Svgs/bedtime.svg"
 import DayTime from "../../Svgs/day_time.svg"
 import Lottie from 'lottie-react';
-import audioBeatAnimation from "../../Animations/audio-beat.json"
+import audioBeatAnimation from "../../Animations/music_on.json"
 import muteAnimation from "../../Animations/no_sound.json"
 import myMusicTrack from '../../Media/mansworld.mp3';
 
@@ -12,6 +12,12 @@ const Topbar = () => {
     const [currentTime, setCurrentTime] = useState('');
     const [isDaytime, setIsDaytime] = useState(true);
     const [isSoundOn, setIsSoundOn] = useState(false);
+       const initiateWhatsAppChat = () => {
+        const phoneNumber = '254799362341';
+        const message = 'Hello! I\m Interetsed in working together .'; 
+        const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+        window.open(whatsappUrl, '_blank');
+    };
 
     useEffect(() => {
         const updateTime = () => {

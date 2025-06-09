@@ -2,7 +2,9 @@ import React from 'react'
 import css from "./Bottombar.module.css"
 import Roundedbtn from '../RoundedButton/Roundedbtn'
 
+
 const Bottombar = () => {
+
     return (
         <div className={css.container}>
             {/* change Projects view */}
@@ -10,7 +12,7 @@ const Bottombar = () => {
             {/* Floating navigation */}
             <Roundedbtn btnType={1} itemIndex={1} />
             {/* filter button */}
-            <Roundedbtn btnType={1} text={'Filter'} itemIndex={2} />
+            <Roundedbtn btnType={1} text={'Resume'} itemIndex={2} />
         </div>
     )
 }

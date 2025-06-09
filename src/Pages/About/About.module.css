@@ -1,0 +1,37 @@
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    padding-top: 150px;
+
+}
+
+.container::before {
+    width: 500px;
+    height: 400px;
+    content: '';
+    background-image: linear-gradient(70deg, #DC422A, blue);
+    filter: blur(150px);
+    position: absolute;
+    z-index: -1;
+    border-radius: 20% 30% 80% 10%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-10%, -50%);
+    transition: 1s;
+}
+
+
+.heading {
+    display: flex;
+    align-self: flex-start;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 80px 15px 100px 15px;
+    }
+}

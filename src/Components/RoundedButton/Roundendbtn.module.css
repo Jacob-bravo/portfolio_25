@@ -48,7 +48,9 @@
     border-radius: 50px;
     cursor: pointer;
     color: var(--grey_button);
+    transition: 0.5s;
 }
+
 
 .Icongrid>:nth-child(1) {
     display: flex;
@@ -67,7 +69,7 @@
 .NavigationCenter {
     cursor: pointer;
     background-color: var(--white_color);
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     box-sizing: content-box;
