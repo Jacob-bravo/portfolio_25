@@ -4,16 +4,18 @@ import Phone from "../../Svgs/phone 1.svg"
 import Music from "../../Svgs/music 1.svg"
 import Camera from "../../Svgs/camera 1.svg"
 import Explore from "../../Svgs/explore.svg"
-import RecentPhoto from "../../Images/biiding_app.jpg"
-import AppleParkImage from "../../Images/applepark.jpg"
+const AppleParkImage = "https://firebasestorage.googleapis.com/v0/b/synchronia-ke.appspot.com/o/applepark.jpg?alt=media&token=d6f3d5c4-dea3-40f8-b828-6b1adac10f3c"
 
 const ApplePark = () => {
+    const handleVisit = () => {
+        window.open("https://apple-event-4c3ac.web.app/", "_blank");
+    };
     return (
         <div className={css.Frame}>
             <div className={css.Column}>
 
                 <div className={css.Description}>
-                    <i class="uil uil-link"></i>
+                    <i class="uil uil-link" onClick={handleVisit}></i>
                     <h1>APPLE EVENT</h1>
                     <span>A modern and responsive UI website inspired by Apple's event presentation,
                         designed to showcase the launch of the iPhone 15 Pro.
@@ -41,7 +43,7 @@ const ApplePark = () => {
             <div className={css.CameraColumn}>
                 <div className={css.cameraframe}>
                     <div className={css.HiddenDescription}>
-                        <i class="uil uil-link"></i>
+                        <i class="uil uil-link" onClick={handleVisit}></i>
                         <h1>APPLE EVENT</h1>
                         <span>A modern and responsive UI website inspired by Apple's event presentation,
                             designed to showcase the launch of the iPhone 15 Pro.

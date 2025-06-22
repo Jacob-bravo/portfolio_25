@@ -12,7 +12,8 @@
 .Frame {
     width: 100vw;
     height: 100vh;
-    background-image: url(../../Images/spotify.jpg);
+    background-color: white;
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/synchronia-ke.appspot.com/o/spotify.jpg?alt=media&token=c6cf90f9-17a8-4d19-95b6-ddb9a1564d6f);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

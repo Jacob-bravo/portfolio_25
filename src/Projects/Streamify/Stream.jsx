@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import css from "./Stream.module.css"
 import Lottie from 'lottie-react';
-import Profile from "../../Images/weatherapp.jpg"
 import AnimationOne from "../../Animations/hand-love.json"
 import AnimationTwo from "../../Animations/love-baloon.json"
 import AnimationThree from "../../Animations/pixelated-heart.json"
 import AnimationFour from "../../Animations/hearts.json"
+const Profile = "https://firebasestorage.googleapis.com/v0/b/synchronia-ke.appspot.com/o/weatherapp.jpg?alt=media&token=8c1354eb-f31c-4520-8867-e243da547292"
 
 const TextToDisplay = ["I genuinely believe the most exciting projects are born from curiosity and collaboration.", "But how deeply we understand the path ahead", "Every quiet moment is an invitation to listen to the whispers of purpose within"];
 const AnimationToDisplay = [AnimationOne, AnimationTwo, AnimationThree, AnimationFour];
@@ -16,6 +16,9 @@ const Stream = () => {
     const [charIndex, setCharIndex] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
     const [animationIndex, setAnimationIndex] = useState(3);
+    const handleVisit = () => {
+        window.open("https://virtualr-2e4c3.web.app", "_blank");
+    };
 
     useEffect(() => {
         const currentText = TextToDisplay[index];
@@ -57,7 +60,7 @@ const Stream = () => {
             <div className={css.Columns}>
                 {/* Streamify Intro Box */}
                 <div className={css.ColumnOne}>
-                    <i class="uil uil-github-alt"></i>
+                    <i class="uil uil-github-alt" onClick={handleVisit}></i>
                     <div className={css.Header}>
                         Streamify
 
@@ -103,7 +106,7 @@ const Stream = () => {
                 <div className={css.ColumnTwo}>
                     <div className={css.Liveweb}>
                         <h1>Streamify</h1>
-                        <i class="uil uil-link"></i>
+                        <i class="uil uil-link" onClick={handleVisit}></i>
                     </div>
                     <div className={css.Features}>
                         <div className={css.Into}>

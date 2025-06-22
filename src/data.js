@@ -13,18 +13,19 @@ export const projects = [
 
 
 export const Movies = [
-  "https://picsum.photos/1000/700",
-  "https://picsum.photos/1400/800",
-  "https://picsum.photos/800/500?blur=5",
-  "https://picsum.photos/1900/700",
-  "https://picsum.photos/1200/800",
-  "https://picsum.photos/1500/900",
-  "https://picsum.photos/1200/200",
-  "https://picsum.photos/1200/800",
-  "https://picsum.photos/1300/900",
-  "https://picsum.photos/800/500?blur=5",
-  "https://picsum.photos/1000/800",
-  "https://picsum.photos/1200/800",
+  "https://firebasestorage.googleapis.com/v0/b/synchronia-ke.appspot.com/o/boysweek.jpg?alt=media&token=3c1f3862-4c91-4b20-9fe0-f75e4827855e",
+  "https://firebasestorage.googleapis.com/v0/b/synchronia-ke.appspot.com/o/theater.jpg?alt=media&token=4c8c1e6b-e9e9-4b9d-9660-f4ba1c5e598a",
+  "https://firebasestorage.googleapis.com/v0/b/synchronia-ke.appspot.com/o/theater.jpg?alt=media&token=4c8c1e6b-e9e9-4b9d-9660-f4ba1c5e598a",
+  "https://firebasestorage.googleapis.com/v0/b/synchronia-ke.appspot.com/o/boysweek.jpg?alt=media&token=3c1f3862-4c91-4b20-9fe0-f75e4827855e",
+  "https://firebasestorage.googleapis.com/v0/b/synchronia-ke.appspot.com/o/theater.jpg?alt=media&token=4c8c1e6b-e9e9-4b9d-9660-f4ba1c5e598a",
+  "https://firebasestorage.googleapis.com/v0/b/synchronia-ke.appspot.com/o/safely-motorcycle-helmet.jpg?alt=media&token=709c7ef2-7fd4-48b4-9e75-3ac337d94f41",
+  "https://firebasestorage.googleapis.com/v0/b/synchronia-ke.appspot.com/o/naeim-jafari-laobUPA4jR8-unsplash.jpg?alt=media&token=74ead2e0-1fc7-47c7-a64f-4e344f8359d4",
+  "https://firebasestorage.googleapis.com/v0/b/synchronia-ke.appspot.com/o/safely-motorcycle-helmet.jpg?alt=media&token=709c7ef2-7fd4-48b4-9e75-3ac337d94f41",
+  "https://firebasestorage.googleapis.com/v0/b/synchronia-ke.appspot.com/o/theater.jpg?alt=media&token=4c8c1e6b-e9e9-4b9d-9660-f4ba1c5e598a",
+  "https://firebasestorage.googleapis.com/v0/b/synchronia-ke.appspot.com/o/jasmin-chew-Z1pLKOj5Acc-unsplash.jpg?alt=media&token=636846fe-9aa6-4df6-a301-0de74682b594",
+  "https://firebasestorage.googleapis.com/v0/b/synchronia-ke.appspot.com/o/Runway.jpg?alt=media&token=ada89ba7-1e0b-4c5b-94cc-6b6d16f48d67",
+  "https://firebasestorage.googleapis.com/v0/b/synchronia-ke.appspot.com/o/Runway.jpg?alt=media&token=ada89ba7-1e0b-4c5b-94cc-6b6d16f48d67",
+
 
 
 ];

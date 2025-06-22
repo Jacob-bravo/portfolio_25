@@ -1,6 +1,6 @@
 import React from 'react';
 import css from "./About.module.css";
-import JakeImage from "../../Images/jakebravo.png";
+import JakeImage from "../../Images/jake.jpg";
 
 const About = () => {
     return (
@@ -13,7 +13,7 @@ const About = () => {
                 <div className={css.Bio}>
                     <h2>Who is Jake Bravo?</h2>
                     <p>
-                        I'm a passionate software developer with a background in Computer Science and Mathematics. My journey began in campus, where I built my first startup using HELB funds to serve fellow students with affordable printing solutions.
+                        I'm a passionate software developer with a background in Computer Science and Mathematics. My journey began in campus, where I built my first startup using GRANT funds to serve fellow students with affordable printing solutions.
                     </p>
                     <p>
                         Over the years, I've evolved into a full-stack web and mobile developer, leveraging the MERN stack and Flutter to build products that solve real-world problems.

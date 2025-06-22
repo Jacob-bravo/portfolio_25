@@ -2,6 +2,9 @@ import React, { useRef } from 'react';
 import css from "./Synchronia.module.css";
 
 const Synchronia = () => {
+    const handleVisit = () => {
+        window.open("https://synchronia-ke.web.app/", "_blank");
+    };
     const videoRef = useRef(null);
 
     const handleLoadedMetadata = () => {
@@ -12,9 +15,9 @@ const Synchronia = () => {
 
     return (
         <div className={css.Frame}>
-            <div className={css.Github}>
+            <div className={css.Github} onClick={handleVisit}>
                 <i class="uil uil-github"></i>
-             <i class="uil uil-link"></i>
+                <i class="uil uil-link"></i>
 
             </div>
             <div className={css.VideoContainer}>

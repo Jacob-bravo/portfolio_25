@@ -2,8 +2,11 @@ import React from 'react'
 import css from "./Spotify.module.css"
 import Lottie from 'lottie-react'
 import SportifyAnimation from "../../Animations/spotify.json"
-import PLaying from "../../Images/spotify clone.jpg"
+const PLaying = "https://firebasestorage.googleapis.com/v0/b/synchronia-ke.appspot.com/o/spotify%20clone.jpg?alt=media&token=551d3cde-215e-4de7-a27c-78d9ef697f85"
 const Spotify = () => {
+    const handleVisit = () => {
+        window.open("https://github.com/Jacob-bravo/spotify_clone", "_blank");
+    };
     return (
         <div className={css.Frame}>
             <div className={css.Columns}>
@@ -45,7 +48,7 @@ const Spotify = () => {
                             <div className={css.NavigationRow}>
                                 <div></div>
                                 <div></div>
-                                <i class="uil uil-github"></i>
+                                <i class="uil uil-github" onClick={handleVisit}></i>
 
                             </div>
                         </div>

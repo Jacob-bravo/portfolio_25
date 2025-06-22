@@ -12,7 +12,8 @@
     width: 100vw;
     height: 100vh;
     position: relative;
-    background-image: url(../../Images/applepark.jpg);
+    background-color: var(--white_color);
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/synchronia-ke.appspot.com/o/applepark.jpg?alt=media&token=d6f3d5c4-dea3-40f8-b828-6b1adac10f3c);
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
