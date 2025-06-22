@@ -1,0 +1,22 @@
+.Frame {
+	height: 100vh;
+	width: 100vw;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+.card {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: sticky;
+	top: 0;
+}
+.card>img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}

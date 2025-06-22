@@ -1,6 +1,5 @@
 import { React, useRef, useEffect, useState } from 'react'
-import css from "./Topbar.module.css";
-import Roundedbtn from '../RoundedButton/Roundedbtn';
+import css from "./Navbar.module.css";
 import NightTime from "../../Svgs/bedtime.svg"
 import DayTime from "../../Svgs/day_time.svg"
 import Lottie from 'lottie-react';
@@ -8,13 +7,13 @@ import audioBeatAnimation from "../../Animations/music_on.json"
 import muteAnimation from "../../Animations/no_sound.json"
 import myMusicTrack from '../../Media/mansworld.mp3';
 
-const Topbar = () => {
+const Navbar = () => {
     const [currentTime, setCurrentTime] = useState('');
     const [isDaytime, setIsDaytime] = useState(true);
     const [isSoundOn, setIsSoundOn] = useState(false);
-       const initiateWhatsAppChat = () => {
+    const initiateWhatsAppChat = () => {
         const phoneNumber = '254799362341';
-        const message = 'Hello! I\m Interetsed in working together .'; 
+        const message = 'Hello! I\m Interetsed in working together .';
         const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
         window.open(whatsappUrl, '_blank');
     };
@@ -167,13 +166,14 @@ const Topbar = () => {
                         <span>{currentTime} UTC +3</span>
                     </div>
 
-                    <span></span>
+
                 </div>
-                {/* Lest talk Button */}
-                <Roundedbtn text={'Let\'s talk'} btnType={0} itemIndex={0} />
+                <div className={css.Button} onClick={initiateWhatsAppChat}>
+                    <button>LET'S TALK</button>
+                </div>
             </div>
         </div>
     )
 }
 
-export default Topbar
+export default Navbar

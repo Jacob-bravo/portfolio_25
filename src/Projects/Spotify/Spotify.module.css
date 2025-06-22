@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+24&display=swap');
+
+
+:root {
+    --white_color: #ffffff;
+    --glass-border-color: rgba(255, 255, 255, 0.18);
+    --glass-shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+.Frame {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../../Images/spotify.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.Columns {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ColumnOne {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ColumnTwo {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Header {
+    position: absolute;
+    display: flex;
+    top: 100px;
+    align-self: flex-start;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.Headers {
+    display: flex;
+    flex-direction: column;
+    font-family: "Lugrasimo", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.animation {
+    height: 100px;
+    width: 100px;
+}
+
+
+
+.PlayMusicComponent {
+    width: 500px;
+    height: 90px;
+    background-color: white;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin: 50px auto;
+}
+
+.PlayMusicComponent::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    left: 0;
+    height: 100%;
+    background-color: rgba(255, 6, 6, 0.2);
+    border-radius: 20px;
+    z-index: -1;
+    filter: blur(5px);
+    transition: all 0.3s ease-in-out;
+}
+
+.InitalRow {
+    display: flex;
+    margin-left: 10px;
+}
+
+.Disk {
+    display: flex;
+    position: relative;
+    align-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.Disk>div {
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background-color: black;
+    border-radius: 50%;
+
+}
+
+.Disk>img {
+    object-fit: cover;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.AlbumDetails {
+    margin-left: 10px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    font-family: "Borel", cursive;
+    font-weight: 400;
+    line-height: 25px;
+    font-style: normal;
+}
+
+.PlayMusicComponent>button {
+    outline: none;
+    border: none;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 5ms ease-in-out;
+}
+
+.Container {
+    width: 60%;
+    box-sizing: content-box;
+    padding: 20px;
+    height: fit-content;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border-color);
+    border-radius: 20px;
+}
+
+.Description>span {
+    font-size: 20px;
+}
+
+.TechStack {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    border-radius: 50px;
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.TechStack::before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    border-radius: inherit;
+    background: linear-gradient(45deg,
+            #ff0000,
+            #ffd103,
+            #ff0000,
+            #011aff);
+    background-size: 400% 400%;
+    z-index: -1;
+    filter: blur(1px);
+    animation: animateGradient 5s linear infinite;
+}
+
+@keyframes animateGradient {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+.Intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: "Jacquard 24", system-ui;
+    font-weight: 400;
+    color: rgb(0, 255, 0);
+    font-size: 40px;
+    font-style: normal;
+}
+
+.NavigationRow {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.NavigationRow>div:nth-child(1) {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: rgb(0, 255, 0);
+}
+
+
+.NavigationRow>div {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.NavigationRow>i {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.PlayingArea {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.PlayingArea>img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 992px) {
+    .PlayingArea {
+        display: none;
+    }
+
+    .Columns {
+        height: 100vh;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ColumnTwo {
+        position: absolute;
+        top: 10px;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Container {
+        width: 80%;
+        box-sizing: content-box;
+        padding: 20px;
+        height: fit-content;
+        background-color: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid var(--glass-border-color);
+        border-radius: 20px;
+    }
+
+}

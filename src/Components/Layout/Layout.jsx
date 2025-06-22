@@ -1,20 +1,26 @@
 import React from 'react'
 import css from "./Layout.module.css"
-import Topbar from '../Topnavbar/Topbar'
-import Bottombar from '../Bottomnavbar/Bottombar'
-import Landinpage from '../../Pages/ProjectsGrid/Landinpage'
+import { Outlet } from 'react-router-dom'
+import Navbar from '../Navbar/Navbar'
+import BottomBar from '../BottomNavbar/BottomBar'
+
 
 const Layout = () => {
     return (
-        <div className={css.frame}>
-            {/* Topnavbar */}
-            <Topbar />
-            {/* Content Area/ Outlet */}
-            <div className={css.Outlet}>
-                <Landinpage />
+        <div className={css.Frame}>
+            {/* Navbar */}
+            <div className={css.RowOne}>
+                <Navbar />
             </div>
-            {/* BottomNavbar */}
-            <Bottombar />
+            {/* Outlet */}
+            <div className={css.RowTwo}>
+                <Outlet />
+            </div>
+            {/* BottomNav */}
+            <div className={css.BottomNav}>
+                <BottomBar />
+            </div>
+
         </div>
     )
 }

@@ -1,0 +1,45 @@
+.Frame {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-color: white;
+}
+
+.Github {
+    position: absolute;
+    color: black;
+    top: 100px;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    margin-left: 20px;
+    font-size: 70px;
+    height: 100px;
+}
+
+.Github>i:nth-child(2) {
+    font-size: 20px;
+}
+
+.VideoContainer {
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+}
+
+.Video {
+    width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+    .Frame {
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+        background-color: #f4f8fe;
+        display: flex;
+    }
+
+}

@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap');
+
+.Frame {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+
+}
+
+.Columns {
+    display: flex;
+    position: relative;
+    color: black;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.ColumnOne {
+    height: 100vh;
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+
+}
+
+.ColumnOne>i {
+    font-size: 70px;
+    cursor: pointer;
+}
+
+.ColumnTwo {
+    position: absolute;
+    top: -120%;
+    cursor: pointer;
+    right: -70px;
+    width: fit-content;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    transform: rotate(-40deg);
+}
+
+.Description {
+    font-family: "Doto", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 18px;
+    color: black;
+
+}
+
+
+.CardMovie {
+    height: 60vh;
+    width: 18vw;
+    border-radius: 20px;
+}
+
+.CardMovie>img {
+    background-color: red;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.DevChips {
+    display: flex;
+    gap: 20px;
+}
+
+.DevChips>span {
+    width: fit-content;
+    box-sizing: content-box;
+    background-color: white;
+    box-shadow: 0px 8px 25px rgba(0, 0, 20, 0.12);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+}
+
+@media screen and (max-width: 992px) {
+    .Columns {
+        display: flex;
+        position: relative;
+        color: black;
+        flex-direction: row;
+        overflow: hidden;
+    }
+
+    .Description {
+        font-family: "Doto", sans-serif;
+        font-optical-sizing: auto;
+        font-size: 18px;
+        color: black;
+
+    }
+
+    .ColumnOne>i {
+        font-size: 50px;
+        cursor: pointer;
+    }
+
+
+    .Description>span {
+        font-family: "Nunito";
+        color: black;
+        padding: 8px;
+        line-height: 33px;
+        background-color: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid var(--glass-border-color);
+        border-radius: 20px;
+        box-shadow: 0 4px 30px var(--glass-shadow-color);
+    }
+
+    .ColumnOne {
+        height: 100vh;
+        display: flex;
+        width: 90%;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+        position: relative;
+        z-index: 2;
+    }
+
+    .ColumnTwo {
+        position: absolute;
+        top: -80%;
+        cursor: pointer;
+        right: -20px;
+        width: fit-content;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(3, 1fr);
+        transform: rotate(-30deg);
+        z-index: 1;
+    }
+
+    .CardMovie {
+        height: 50vh;
+        width: 70vw;
+        border-radius: 20px;
+    }
+
+    .DevChips {
+        display: flex;
+        gap: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .DevChips>span {
+        width: fit-content;
+        box-sizing: content-box;
+        background-color: white;
+        box-shadow: 0px 8px 25px rgba(0, 0, 20, 0.12);
+        border-radius: 10px;
+        padding: 8px;
+        margin-top: 10px;
+    }
+
+}

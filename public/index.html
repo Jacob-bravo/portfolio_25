@@ -2,13 +2,10 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
+  <meta charset="UTF-8">
   <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#000000" />
-  <meta name="description" content="Web site created using create-react-app" />
-  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <meta name="description" content="Modern Portfolio" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=signature" />
@@ -18,23 +15,55 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
+  <title>J.a.k.e.b.r.a.v.o</title>
+  <style>
+    body {
+      min-height: 100vh;
+      min-width: 100vw;
+      overflow: hidden;
+      margin: 0;
+      color: white;
+      transition: background-color 2s ease;
+    }
 
-  <title>Jakebravo</title>
+    :root {
+      --outer-space-gradient: linear-gradient(to bottom right,
+          #000000 0%,
+          #453A6D 30%,
+          #A47D92 65%,
+          #7D2727 90%,
+          #000000 100%);
+
+      --classic-space-gradient: linear-gradient(to top left,
+          #000000 0%,
+          #1A2C42 25%,
+          #3B076B 60%,
+          #6A057F 85%,
+          #000000 150%);
+    }
+  </style>
 </head>
 
 <body>
-  <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
-  <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+  <script>
+    function setGradientByTime() {
+      const now = new Date();
+      const hour = now.getHours();
+      const isNight = (hour >= 18 || hour < 7);
+      const timeDisplay = document.getElementById('time-display');
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+      if (isNight) {
+        document.body.style.background = 'var(--classic-space-gradient)';
+        timeDisplay.textContent = `It's Night! (${now.toLocaleTimeString()})`;
+      } else {
+        document.body.style.background = 'var(--outer-space-gradient)';
+        timeDisplay.textContent = `It's Day! (${now.toLocaleTimeString()})`;
+      }
+    }
+    setGradientByTime();
+    setInterval(setGradientByTime, 60 * 1000); 
+  </script>
 </body>
 
 </html>
