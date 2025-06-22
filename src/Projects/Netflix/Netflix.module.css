@@ -93,7 +93,7 @@
         font-family: "Doto", sans-serif;
         font-optical-sizing: auto;
         font-size: 18px;
-        color: black;
+        color: white;
 
     }
 
@@ -105,26 +105,25 @@
 
     .Description>span {
         font-family: "Nunito";
-        color: black;
+        color: white;
         padding: 8px;
         line-height: 33px;
-        background-color: rgba(255, 255, 255, 0.15);
-        backdrop-filter: blur(20px);
-        -webkit-backdrop-filter: blur(20px);
-        border: 1px solid var(--glass-border-color);
         border-radius: 20px;
-        box-shadow: 0 4px 30px var(--glass-shadow-color);
+        text-align: justify;
+
     }
 
     .ColumnOne {
         height: 100vh;
         display: flex;
-        width: 90%;
+        width: 100%;
         flex-direction: column;
         justify-content: center;
-        padding: 10px;
+        padding: 0px;
+        color: white;
         position: relative;
         z-index: 2;
+        background-color: rgba(0, 0, 0, 0.5);
     }
 
     .ColumnTwo {
@@ -157,7 +156,7 @@
     .DevChips>span {
         width: fit-content;
         box-sizing: content-box;
-        background-color: white;
+        background-color: black;
         box-shadow: 0px 8px 25px rgba(0, 0, 20, 0.12);
         border-radius: 10px;
         padding: 8px;

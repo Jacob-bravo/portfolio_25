@@ -57,15 +57,6 @@
   transition: all 0.4s ease-in-out;
 }
 
-.ImageContainer :hover {
-    flex: 1;
-    min-height: 350px;
-    min-width: 250px;
-    display: flex;
-    justify-content: center;
-    transition: 500ms ease-in-out;
-}
-
 .ImageContainer img {
     max-width: 100%;
     object-fit: cover;

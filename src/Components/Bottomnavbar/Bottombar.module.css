@@ -45,3 +45,11 @@ img {
         transition: 0.8s ease-in;
     }
 }
+@media screen and (max-height: 667px) {
+        .workActive > img,
+    .AboutmeActive > img {
+        height: 80px;
+        width: 80px;
+        transition: 0.8s ease-in;
+    }
+}

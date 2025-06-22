@@ -307,4 +307,36 @@
         border-radius: 20px;
     }
 
+    .Description>span {
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-height: 667px) {
+    .Headers {
+        display: flex;
+        flex-direction: column;
+        font-family: "Lugrasimo", cursive;
+        font-weight: 400;
+        font-size: 13px;
+        font-style: normal;
+    }
+
+    .animation {
+        height: 70px;
+        width: 70px;
+    }
+
+    .Container {
+        width: 80%;
+        box-sizing: content-box;
+        padding: 20px;
+        height: fit-content;
+        background-color: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid var(--glass-border-color);
+        border-radius: 20px;
+    }
 }

@@ -27,7 +27,7 @@ const Netflix = () => {
                     {
                         Movies.map((movie, index) => {
                             return (
-                                <div className={css.CardMovie}>
+                                <div className={css.CardMovie} key={index}>
                                     <img src={movie} alt={index} />
                                 </div>
 
