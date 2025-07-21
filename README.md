@@ -1,70 +1,96 @@
-# Getting Started with Create React App
+# 🌐 3D Awwwards-Level Developer Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Built with React, GSAP, Three.js, TailwindCSS
 
-## Available Scripts
+This is a fully animated, interactive, 3D developer portfolio designed to **impress clients, recruiters, and hiring managers**. It's more than a portfolio—it's a web experience built with production-level code, scroll-based animations, and real-world best practices.
 
-In the project directory, you can run:
+> ⚡ Inspired by Awwwards-level sites — built with React (Vite), TailwindCSS, GSAP, React Three Fiber, and Drei.
 
-### `npm start`
+<br/>
+<div>
+  <img src="https://github.com/user-attachments/assets/4eaf9399-fd02-4a90-83f7-2b5a361bc032" alt="Hero" style="border-radius: 8px;"/>
+  <div style="display: flex; justify-content: space-between; margin: 20px 0;">
+    <img src="https://github.com/user-attachments/assets/155bf742-b24f-4119-89f4-87e6d88c8f53" alt="Works" style="width: 32%; border-radius: 8px;"/>
+    <img src="https://github.com/user-attachments/assets/f22b9749-85ed-434f-a5f6-df1f8e221103" alt="ContactSummary" style="width: 32%; border-radius: 8px;"/>
+    <img src="https://github.com/user-attachments/assets/3e473322-b96a-433b-aec5-ece9bab25795" alt="Contact" style="width: 32%; border-radius: 8px;"/>
+  </div>
+</div>
+<br/>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+> 📺 [Watch Full YouTube Walkthrough](https://youtu.be/i0229UsdBwc)
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🚀 Tech Stack
 
-### `npm test`
+| Technology       | Description                             |
+| ---------------- | --------------------------------------- |
+| **React (Vite)** | Fast dev server and production bundling |
+| **Tailwind CSS** | Utility-first styling for components    |
+| **GSAP**         | Scroll-based animation and motion logic |
+| **Three.js**     | 3D scenes powered by React Three Fiber  |
+| **Drei**         | Useful helpers for 3D rendering         |
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 📁 Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- 🔥 3D Hero Section with animated planet and golden ring
+- 🧩 Smooth slide-in Navbar with staggered link animations
+- 🎯 Scroll-triggered Service Summary with horizontal word motion
+- 🖼️ Works section with hover overlays and interactive previews
+- ✍️ About section with clip-path image reveal + typewriter text
+- 🏁 Marquee-based Contact Summary and CTA
+- 💼 Fully responsive and accessible on all screen sizes
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📦 Setup & Installation
 
-### `npm run eject`
+```bash
+git clone https://github.com/Ali-Sanati/awwwards-portfolio.git
+cd awwwards-portfolio
+npm install
+npm run dev
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+> Open http://localhost:5173 in your browser.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🛠️ Customization Tips
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Change text, images, and links in /constants/index.js
 
-## Learn More
+- Update 3D models and scene in Hero.jsx
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Add your own contact info in Contact.jsx
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Adjust colors, fonts, and layout via tailwind.config.js
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🔗 Assets
 
-### Analyzing the Bundle Size
+Assets used in the project can be found [here](https://github.com/user-attachments/files/19820923/public.zip)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 📣 Like the project?
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+If this helped you build or inspire your own site:
 
-### Advanced Configuration
+- ⭐ Star this repo
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- 📺 [Watch the full walkthrough on YouTube](https://youtu.be/i0229UsdBwc)
 
-### Deployment
+- 📬 [Connect on LinkedIn](https://www.linkedin.com/in/ali-sanati)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- 📷 [Follow me on Instagram](https://www.instagram.com/ali.sanatidev/reels/)
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 🤝 Let’s Build Together
+
+Drop a comment on the video or open an issue with your idea!
+
+> 📩 Like, subscribe, and let me know what kind of project you want to build together!
